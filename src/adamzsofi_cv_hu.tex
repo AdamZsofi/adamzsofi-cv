@@ -1,0 +1,138 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage{fontawesome5}
+
+\usepackage[scale=0.84]{geometry}
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\newcommand{\weblink}[2]{{\href{#1}{#2}}}
+
+\name{Levente}{Bajczi}
+\title{Computer scientist $\cdot$ PhD Student}
+%\address{}{}{}
+%\phone[mobile]{}
+%\phone[fixed]{}
+%\phone[fax]{}
+%\email{}
+%\email{}
+%\homepage{}
+%\extrainfo{}
+\extrainfo{
+	Budapest, Hungary \faHome{}\\
+	\weblink{mailto:bajczi@mit.bme.hu}{bajczi@mit.bme.hu} \faEnvelope{}\\
+	%\weblink{http://leventebajczi.github.io}{leventebajczi.github.io \faGlobe{}}\\
+	\weblink{http://github.com/AdamZsofi}{AdamZsofi \faGithub{}}\\
+	\weblink{https://www.linkedin.com/in/zs\%C3\%B3fia-\%C3\%A1d\%C3\%A1m-b534341a4/}{leventebajczi \faLinkedin{}}\\
+	\weblink{https://orcid.org/0000-0002-6551-5860}{0000-0002-6551-5860 \faOrcid{}}
+}
+
+\setlength{\fboxsep}{0pt}
+\photo[70pt][0.3pt]{cropped-square.jpg}
+%\quote{Some quote}
+
+\begin{document}
+
+\makecvtitle
+\vspace{-3em}
+
+\section{\faGraduationCap{} Education and Degrees}
+%
+\cventry{2022--2023}{Mérnökinformatikus MSc}{Budapesti Műszaki és Gazdaságtudományi Egyetem}{}{}
+%
+\cventry{2018--2022}{Mérnökinformatikus BSc}{Budapesti Műszaki és Gazdaságtudományi Egyetem}{}{}{\weblink{https://ftsrg.mit.bme.hu/theta/publications/adamzsBsc2021.pdf}{Szakdolgozat: Hatékony technikák C programok formális verifikációjához \faFile*[regular]}}
+
+\section{\faGlobe{} Tapasztalatok}
+%
+\cventry{2022 Nyár}%
+{CERN}{Meyrin, CH}{CERN Summer Student}{}%
+{A CERN "nyári diák" (Summer Student) programjának keretében két hónapot töltöttem a Beam Department alatti Industrial Control Systems Group csoportnál. PLC verifikációval, elsősorban követelmény formalizációval foglalkoztam.}
+%
+\cventry{2021 Nyár}%
+{thyssenkrupp Components Technology Hungary}{Budapest, HU}{Software Engineering Intern
+at thyssenkrupp}{}%
+{Statikus analízis szabályok fejlesztése a szoftverfejlesztő csoport házi kódolási szabályai alapján.}
+%
+\cventry{2019--Present}%
+{Budapest University of Technology and Economics}{Budapest, HU}{Teaching Assistant}{}%
+{Gyakorlatok tartása, zárthelyi és vizsga feladatok összeállítása és javítása, házi feladat informatikai rendszerének karbantartása több kurzuson is.}
+%
+%\section{\faIdCard{} Internships}
+%
+%\cventry{2020}%
+%{thyssenkrupp Components Technology Hungary}{Budapest, HU}{Software Engineering Intern}{}%
+%{Developing experimental multiprocessing support for a custom AUTOSAR Operating System.}
+%
+\section{\faHandshake{} Önkénteskedés}
+%
+\cventry{2017--2019}%
+{\weblink{https://skool.org.hu/}{Skool}}{Budapest, HU}{Mentor \& Programozás Oktató}{}%
+{Az informatika és kapcsolódó területek bemutatása fiatal lányoknak, bátorításuk az ezeken a területeken való továbbtanulásra.}
+%
+%\section{\faCogs{} Certifications}
+%\cventry{2021}%
+%{\weblink{https://www.omg.org/ocsmp}{OMG-OCSMP Model User}}%
+%{}{}{}{Demonstrating the ability to interpret and understand basic MBSE concepts along with SysML models.}
+%
+\section{\faLightbulb{} Képességek, ismeretek}
+\cvitem{Kutatás}{Software model checking, formal methods, CEGAR, tool  development, verification portfolios and algorithm selection}
+\cvitem{Szoftverfejlesztés}{Java, C/C++, git, CI, scripting: Python, Bash}
+\cvitem{Nyelvtudás}{Magyar (anyanyelv), angol (C1 szint), német (B2 szint)}
+
+\newpage
+
+\section{\faFile*[regular]{} Publikációk}
+\cventry{NFM 2023 (elfogadott, még nem közzétett)}%
+{From Natural Language Requirements to the Verification of Programmable Logic Controllers}%
+{\underline{Zs.~Ádám}, et al}
+{}{}{}
+%
+\cventry{FormaliSE 2022}%
+{C for yourself: comparison of front-end techniques for formal verification}%
+{L.~Bajczi, \underline{Zs.~Ádám}, Hajdu, V.~Moln\'ar}
+{}{}{}
+%
+\cventry{TACAS SV-COMP 2022}%
+{Theta: portfolio of CEGAR-based analyses with dynamic algorithm selection (Competition Contribution)}%
+{\weblink{http://ftsrg.mit.bme.hu/paper-tacas2022-theta/paper.pdf}{\faFile*[regular]}\newline{}
+\underline{Zs.~Ádám}, et al}
+{}{}{}
+%
+\cventry{TACAS SV-COMP 2021}%
+{Gazer-Theta: LLVM-based Verifier Portfolio with BMC/CEGAR}%
+{\weblink{http://ftsrg.mit.bme.hu/paper-tacas2022-theta/paper.pdf}{\faFile*[regular]}\newline{}
+\underline{Zs.~Ádám}, L.~Bajczi, M.~Dobos-Kov\'acs, \'{A}. Hajdu, V.~Moln\'ar}
+{}{}{}
+%
+\cvitem{\weblnRészletesebb ORCID lista}{\weblink{https://orcid.org/0000-0003-2354-1750}{\faOrcid{}\small 0000-0003-2354-1750}}
+
+\section{\faTrophy{} Elnyert Díjak és Ösztöndíjak}
+\cventry{2022}{\weblink{https://tdk.bme.hu/VIK/beagy1/Absztrakcioalapu-trace-generalas-formalis}{Kari TDK első helyezés (Beágyazott Rendszerek)}}{}{}{}{}
+\cventry{2022--2023}{"ÚNKP" Ösztöndíj}{}{}{}{}
+\cventry{2021--2023}{"NFÖD" Ösztöndíj}{}{}{}{}
+\cventry{2021--2023}{"KBME" Ösztöndíj}{}{}{}{}
+%\cventry{2019, 2021}{First place at the National Scientific Students' Associations Conference}{}{}{}{}
+
+\section{\faFile*[regular]{} Kontribúciók Nyílt Forráskódú Szoftverekhez}
+\cventry{\weblink{http://github.com/ftsrg/theta/}{Theta}}{CEGAR algoritmus fejlesztései, portfólió stratégiák kutatása, implementálása, C ellenőrző frontend implementálás.}{}{}{}{}
+\cventry{\weblink{https://gitlab.com/plcverif-oss}{PLCverif}}{A Formal Requirement Elicitation Tool (FRET) eszköz implementációja a PLCverif CERN által fejlesztett PLC ellenőrző eszközbe.}{}{}{}{}
+\cventry{\weblink{}{http://github.com/ftsrg/gazer/}{Gazer}}{Fejlesztések, mérések a Gazer BME Kritikus Rendszerek kutatócsoportjánál fejlesztett BMC ellenőrzőhöz}{}{}{}{}
+
+\section{\faBook{} Teaching}
+\cvitem{Courses}{%
+	Szoftver~és~Rendszer~Ellenőrzés $\cdot$
+	Rendszermodellezés $\cdot$
+	Rendszertervezés $\cdot$
+	Progamozás~Alapjai~1 (Németül) $\cdot$
+	Digitális~Technikák%
+}
+
+\end{document}

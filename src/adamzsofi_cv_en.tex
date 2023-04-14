@@ -1,0 +1,175 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage{fontawesome5}
+
+\usepackage[scale=0.84]{geometry}
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\newcommand{\weblink}[2]{{\href{#1}{#2}}}
+
+\name{Levente}{Bajczi}
+\title{Computer scientist $\cdot$ PhD Student}
+%\address{}{}{}
+%\phone[mobile]{}
+%\phone[fixed]{}
+%\phone[fax]{}
+%\email{}
+%\email{}
+%\homepage{}
+%\extrainfo{}
+\extrainfo{
+	Budapest, Hungary \faHome{}\\
+	\weblink{mailto:bajczi@mit.bme.hu}{bajczi@mit.bme.hu} \faEnvelope{}\\
+	%\weblink{http://leventebajczi.github.io}{leventebajczi.github.io \faGlobe{}}\\
+	\weblink{http://github.com/AdamZsofi}{AdamZsofi \faGithub{}}\\
+	\weblink{https://www.linkedin.com/in/zs\%C3\%B3fia-\%C3\%A1d\%C3\%A1m-b534341a4/}{leventebajczi \faLinkedin{}}\\
+	\weblink{https://orcid.org/0000-0002-6551-5860}{0000-0002-6551-5860 \faOrcid{}}
+}
+
+\setlength{\fboxsep}{0pt}
+\photo[70pt][0.3pt]{cropped-square.jpg}
+%\quote{Some quote}
+
+\begin{document}
+
+\makecvtitle
+\vspace{-3em}
+
+\section{\faGraduationCap{} Education and Degrees}
+%
+\cventry{2022--2023}{Software Engineering MSc}{Budapest University of Technology and Economics}{}{}
+%
+\cventry{2018--2022}{Software Engineering BSc}{Budapest University of Technology and Economics}{}{}{\weblink{https://ftsrg.mit.bme.hu/theta/publications/adamzsBsc2021.pdf}{Thesis: Efficient Techniques for Formal Verification of C Programs \faFile*[regular]}}
+
+\section{\faGlobe{} Experience}
+%
+\cventry{2022 Summer}%
+{CERN}{Meyrin, CH}{CERN Summer Student}{}%
+{I learned about and worked on PLC verification, mainly requirement formalization as part of the Industrial Control Systems Group in the Beam Department for two months.}
+%
+\cventry{2021 Summer}%
+{thyssenkrupp Components Technology Hungary}{Budapest, HU}{Software Engineering Intern
+at thyssenkrupp}{}%
+{Developing rules for C verification with static analyzer based on the in-house coding guidelines.}
+%
+\cventry{2019--Present}%
+{Budapest University of Technology and Economics}{Budapest, HU}{Teaching Assistant}{}%
+{Delivering practical lectures, correcting and assembling exams, managing homework IT infrastructure in several courses.}
+%
+%\section{\faIdCard{} Internships}
+%
+%\cventry{2020}%
+%{thyssenkrupp Components Technology Hungary}{Budapest, HU}{Software Engineering Intern}{}%
+%{Developing experimental multiprocessing support for a custom AUTOSAR Operating System.}
+%
+\section{\faHandshake{} Volunteering}
+%
+\cventry{2017--2019}%
+{\weblink{https://skool.org.hu/}{Skool}}{Budapest, HU}{Mentor \& Programming Tutor}{}%
+{Teaching young girls on introductory programming workshops to motivate them to take part in IT related fields.}
+%
+%\section{\faCogs{} Certifications}
+%\cventry{2021}%
+%{\weblink{https://www.omg.org/ocsmp}{OMG-OCSMP Model User}}%
+%{}{}{}{Demonstrating the ability to interpret and understand basic MBSE concepts along with SysML models.}
+%
+\section{\faLightbulb{} Skills and Interests}
+\cvitem{Research}{Software model checking, formal methods, CEGAR, tool  development, verification portfolios and algorithm selection}
+\cvitem{Development}{Java, C/C++, git, CI, scripting: Python, Bash}
+\cvitem{Languages}{Hungarian (native), English (advanced), German (intermediate)}
+
+\newpage
+
+\section{\faFile*[regular]{} Selected Publications}
+\cventry{NFM 2023 (accepted, not yet published)}%
+{From Natural Language Requirements to the Verification of Programmable Logic Controllers}%
+{\underline{Zs.~Ádám}, et al}
+{}{}{}
+%
+\cventry{FormaliSE 2022}%
+{C for yourself: comparison of front-end techniques for formal verification}%
+{L.~Bajczi, \underline{Zs.~Ádám}, Hajdu, V.~Moln\'ar}
+{}{}{}
+%
+\cventry{TACAS SV-COMP 2022}%
+{Theta: portfolio of CEGAR-based analyses with dynamic algorithm selection (Competition Contribution)}%
+{\weblink{http://ftsrg.mit.bme.hu/paper-tacas2022-theta/paper.pdf}{\faFile*[regular]}\newline{}
+\underline{Zs.~Ádám}, et al}
+{}{}{}
+%
+\cventry{TACAS SV-COMP 2021}%
+{Gazer-Theta: LLVM-based Verifier Portfolio with BMC/CEGAR}%
+{\weblink{http://ftsrg.mit.bme.hu/paper-tacas2022-theta/paper.pdf}{\faFile*[regular]}\newline{}
+\underline{Zs.~Ádám}, L.~Bajczi, M.~Dobos-Kov\'acs, \'{A}. Hajdu, V.~Moln\'ar}
+{}{}{}
+%
+\cvitem{More detailed ORCID list}{\weblink{https://orcid.org/0000-0003-2354-1750}{\faOrcid{}\small 0000-0003-2354-1750}}
+
+\section{\faTrophy{} Awards and Scholarships}
+\cventry{2022}{First place at the Scientific Students' Associations Conference (Embedded Systems)}{}{}{}{}
+\cventry{2022--2023}{"ÚNKP" Research Scholarship}{}{}{}{}
+\cventry{2021--2023}{National Academic Scholarship}{}{}{}{}
+\cventry{2021--2023}{Scholarship of the Faculty of BME-VIK}{}{}{}{}
+%\cventry{2019, 2021}{First place at the National Scientific Students' Associations Conference}{}{}{}{}
+
+\section{\faFile*[regular]{} Open Source Contributions}
+\cventry{\weblink{http://github.com/ftsrg/theta/}{Theta Conributor}}{Algorithmic improvement of CEGAR, researching portfolio strategies, development of a C software model checking frontend.}{}{}{}{}
+\cventry{\weblink{https://gitlab.com/plcverif-oss}{PLCverif Contributor}}{Integrated the Formal Requirement Elicitation Tool (FRET) into the PLC verification tool PLCverif developed at CERN.}{}{}{}{}
+\cventry{\weblink{}{http://github.com/ftsrg/gazer/}{Gazer}}{Added features and benchmarked Gazer, a BMC verification tool developed at ftsrg}{}{}{}{}
+
+% TODO
+%\section{\faUniversity{} Academic Activities and Services}
+% \cvitem{PC member}{%
+% 	\weblink{https://www.formalise.org/}{FormaliSE'23},
+% 	\weblink{https://vmcai-2023.github.io/}{VMCAI'23},
+% 	\weblink{https://sites.google.com/view/wosocer2022/}{WoSoCer'22},
+% 	\weblink{http://www.discotec.org/2022/forte.html}{FORTE'22},
+% 	\weblink{https://conf.researchr.org/track/models-2021/models-2021-workshops}{OMBEE'21},
+% 	\weblink{https://qonfest2021.lacl.fr/}{FMICS'21},
+% 	\weblink{https://2021.msrconf.org/track/msr-2021-shadow-pc}{MSR'21-shadow},
+% 	\weblink{https://sv-comp.sosy-lab.org/2021/}{SV-COMP'21},
+% 	\weblink{https://www.openmbee.org/models2020.html}{OMBEE'20}%
+% }
+% \cvitem{AE PC}{%
+% 	\weblink{http://i-cav.org/2022/}{CAV'22},
+% 	\weblink{https://www.univ-orleans.fr/lifo/events/TAP2021/}{TAP'21},
+% 	\weblink{https://conf.researchr.org/home/pldi-2021}{PLDI'21},
+% 	\weblink{https://tap.sosy-lab.org/2020/}{TAP'20},
+% 	\weblink{https://popl20.sigplan.org/home/VMCAI-2020}{VMCAI'20}%
+% }
+%\cvitem{Reviewer}{%
+%	\weblink{https://sv-comp.sosy-lab.org/2023/}{TACAS'23 (SV-COMP)},
+%	\weblink{https://formalise2023.github.io/}{FormaliSE'23},
+%	\weblink{https://www.csaeconf.org/2023}{CSAE'23}%
+%}
+%\cvitem{Subreviewer}{%
+%	\weblink{https://issre2022.github.io/}{ISSRE-W'22},
+%	\weblink{https://vmcai-2023.github.io/}{VMCAI'23}%
+%}
+%\cvitem{AE}{%
+%	\weblink{https://sv-comp.sosy-lab.org/2022/}{TACAS'22 (SV-COMP)},
+%	\weblink{https://sv-comp.sosy-lab.org/2023/}{TACAS'23 (SV-COMP)},
+%	\weblink{http://i-cav.org/2022/}{CAV'22},
+%	\weblink{http://i-cav.org/2023/}{CAV'23}%
+%}
+
+\section{\faBook{} Teaching}
+\cvitem{Courses}{%
+	Software~and~Systems~Verification~course $\cdot$
+	Systems~Modeling $\cdot$
+	Systems~Engineering $\cdot$
+	Basics~of~Programming~1 (in German) $\cdot$
+	Digital~Technology%
+}
+% \cvitem{Students}{Advising 2 BSc Students}
+
+\end{document}
