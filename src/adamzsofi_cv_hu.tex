@@ -6,6 +6,10 @@
 %\renewcommand{\familydefault}{\sfdefault}         
 \nopagenumbers{}
 
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{cmap}
+
 \usepackage[utf8]{inputenc}
 \usepackage[magyar]{babel}
 \usepackage{fontawesome5}
@@ -17,15 +21,7 @@
 \newcommand{\weblink}[2]{{\href{#1}{#2}}}
 
 \name{Ádám}{Zsófia}
-\title{Mérnökinformatikus MSc Hallgató $\cdot$}
-%\address{}{}{}
-%\phone[mobile]{}
-%\phone[fixed]{}
-%\phone[fax]{}
-%\email{}
-%\email{}
-%\homepage{}
-%\extrainfo{}
+\title{Mérnökinformatikus $\cdot$ PhD Hallgató $\cdot$}
 \extrainfo{
 	Budapest, Magyarország \faHome{}\\
 	\weblink{mailto:adamzsofi@edu.bme.hu}{adamzsofi@edu.bme.hu} \faEnvelope{}\\
@@ -45,11 +41,14 @@
 
 \section{\faGraduationCap{} Tanulmányok}
 %
-\cventry{2022--2023}{Mérnökinformatikus MSc}{Budapesti Műszaki és Gazdaságtudományi Egyetem}{}{}{}
+\cventry{2022--2023}{Mérnökinformatikus MSc}{Budapesti Műszaki és Gazdaságtudományi Egyetem}{}{Szakdolgozat: Extending the Capabilities of the CEGAR Model Checking Algorithm}{}
 %
 \cventry{2018--2022}{Mérnökinformatikus BSc}{Budapesti Műszaki és Gazdaságtudományi Egyetem}{\weblink{https://ftsrg.mit.bme.hu/theta/publications/adamzsBsc2021.pdf}{Szakdolgozat: Hatékony technikák C programok formális verifikációjához \faFile*[regular]}}{}{}
 
 \section{\faGlobe{} Tapasztalatok}
+\cventry{2023 Nyár}%
+{LMU}{München, Németország}{Research Stay}{}%
+{A müncheni Ludwig-Maximilians Egyetem Software Verification and Systems Lab csoportja jól ismert a szoftver verifikáció területén, sok éve folyamatosan vezető kutatási eredményeket adva a területhez. Prof. Dr. Dirk Beyer csoportvezető vendéglátásában két hónapot töltöttem a csoportnál. A BTOR2C eszközzel kapcsolatos témán dolgoztam, hardver ellenőrzés kimeneteként kapott, helyességet bizonyító tanúk validációs módszerein. }
 %
 \cventry{2022 Nyár}%
 {CERN}{Meyrin, CH}{CERN Summer Student}{}%
@@ -60,21 +59,9 @@
 at thyssenkrupp}{}%
 {Statikus analízis szabályok fejlesztése a szoftverfejlesztő csoport házi kódolási szabályai alapján.}
 %
-\cventry{2019--Jelen}%
-{Budapesti Műszaki és Gazdaságtudományi Egyetem}{Budapest, HU}{Teaching Assistant}{}%
+\cventry{2019--2023}%
+{Budapesti Műszaki és Gazdaságtudományi Egyetem}{Budapest, HU}{Demonstrátor}{}%
 {Gyakorlatok tartása, zárthelyi és vizsga feladatok összeállítása és javítása, házi feladat informatikai rendszerének karbantartása több kurzuson is.}
-%
-%\section{\faIdCard{} Internships}
-%
-%\cventry{2020}%
-%{thyssenkrupp Components Technology Hungary}{Budapest, HU}{Software Engineering Intern}{}%
-%{Developing experimental multiprocessing support for a custom AUTOSAR Operating System.}
-%
-%
-%\section{\faCogs{} Certifications}
-%\cventry{2021}%
-%{\weblink{https://www.omg.org/ocsmp}{OMG-OCSMP Model User}}%
-%{}{}{}{Demonstrating the ability to interpret and understand basic MBSE concepts along with SysML models.}
 %
 \section{\faLightbulb{} Képességek, ismeretek}
 \cvitem{Kutatás}{szoftver modellellenőrzés, formális módszerek, CEGAR, eszközfejlesztés, verifikációs portfóliók és algoritmus választási technikák}
@@ -82,38 +69,48 @@ at thyssenkrupp}{}%
 \cvitem{Nyelvtudás}{Magyar (anyanyelv), angol (C1 szint), német (B2 szint)}
 
 \section{\faFile*[regular]{} Publikációk}
-\cventry{NFM 2023 (elfogadott, még nem közzétett)}%
+\cventry{NFM 2023}%
 {From Natural Language Requirements to the Verification of Programmable Logic Controllers}%
-{\underline{Zs.~Ádám}, et al}
+{\weblink{https://link.springer.com/chapter/10.1007/978-3-031-33170-1_21}{\faFile*[regular]}\newline{}
+\underline{Zs.~Ádám}, et al}
 {}{}{}
 %
 \cventry{FormaliSE 2022}%
 {C for yourself: comparison of front-end techniques for formal verification}%
-{L.~Bajczi, \underline{Zs.~Ádám}, Hajdu, V.~Moln\'ar}
+{\weblink{https://dl.acm.org/doi/abs/10.1145/3524482.3527646?casa_token=KIVV_ptcbnQAAAAA:ZWzBgIfsGTLoqFIFM-Hj6USDpGiGJs-mLn1yneozW3qoY23K8NwvJ1yL2d8xKz7plSY_nKoOh1oL}{\faFile*[regular]}\newline{}
+L.~Bajczi, \underline{Zs.~Ádám}, Hajdu, V.~Moln\'ar}
 {}{}{}
 %
 \cventry{TACAS SV-COMP 2022}%
 {Theta: portfolio of CEGAR-based analyses with dynamic algorithm selection (Competition Contribution)}%
-{\weblink{http://ftsrg.mit.bme.hu/paper-tacas2022-theta/paper.pdf}{\faFile*[regular]}\newline{}
+{\weblink{https://link.springer.com/chapter/10.1007/978-3-030-99527-0_34}{\faFile*[regular]}\newline{}
 \underline{Zs.~Ádám}, et al}
 {}{}{}
 %
 \cventry{TACAS SV-COMP 2021}%
 {Gazer-Theta: LLVM-based Verifier Portfolio with BMC/CEGAR}%
-{\weblink{http://ftsrg.mit.bme.hu/paper-tacas2022-theta/paper.pdf}{\faFile*[regular]}\newline{}
+{\weblink{https://link.springer.com/chapter/10.1007/978-3-030-72013-1_27}{\faFile*[regular]}\newline{}
 \underline{Zs.~Ádám}, L.~Bajczi, M.~Dobos-Kov\'acs, \'{A}. Hajdu, V.~Moln\'ar}
 {}{}{}
 %
-\cvitem{Részletesebb ORCID lista}{\weblink{https://orcid.org/0000-0003-2354-1750}{\faOrcid{}\small 0000-0003-2354-1750}}
+\cventry{HCVS 2023}%
+{Bottoms Up for CHCs: Novel Transformation of Linear Constrained Horn Clauses to Software Verification}%
+{\weblink{}{\faFile*[regular]}\newline{}
+M.~Somorjai, M.~Dobos-Kov\'acs, \underline{Zs.~Ádám}, L.~Bajczi,  {A}. Vörös}
+{}{}{}
+%
+\cvitem{ORCID}{\weblink{https://orcid.org/0000-0003-2354-1750}{\small 0000-0003-2354-1750}}
+\cvitem{MTMT}{\weblink{https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10077295}{Publikációs Lista az MTMT-n, 10077295}}
 
-\newpage
+%\newpage
 
 \section{\faTrophy{} Elnyert Díjak és Ösztöndíjak}
+\cvitem{2023}{\weblink{https://ms.sapientia.ro/otdk2023/hu/hirek/eredmenyek}{OTDK első helyezés (Formális módszerek)}}
 \cvitem{2022}{\weblink{https://tdk.bme.hu/VIK/beagy1/Absztrakcioalapu-trace-generalas-formalis}{Kari TDK első helyezés (Beágyazott Rendszerek)}}
+\cvitem{2021}{\weblink{https://tdk.bme.hu/VIK/ViewPaper/Portfoliobased-runtime-improvements-for}{Kari TDK második helyezés (Szoftver)}}
 \cvitem{2022}{"ÚNKP" Ösztöndíj}
 \cvitem{2021--2023}{"NFÖD" Ösztöndíj}
 \cvitem{2021--2023}{"KBME" Ösztöndíj}
-%\cventry{2019, 2021}{First place at the National Scientific Students' Associations Conference}{}{}{}{}
 
 \section{\faFile*[regular]{} Kontribúciók Nyílt Forráskódú Szoftverekhez}
 \cvitem{\weblink{http://github.com/ftsrg/theta/}{Theta}}{CEGAR algoritmus fejlesztései, portfólió stratégiák kutatása, implementálása, C ellenőrző frontend implementálás.}
@@ -121,11 +118,12 @@ at thyssenkrupp}{}%
 \cvitem{\weblink{http://github.com/ftsrg/gazer/}{Gazer}}{Fejlesztések, mérések a Gazer BME Kritikus Rendszerek kutatócsoportjánál fejlesztett BMC ellenőrzőhöz}
 
 \section{\faBook{} Oktatás}
-\cvitem{Courses}{%
+\cvitem{Tárgyak}{%
+	Szoftvertechnikák (németül és magyarul) $\cdot$
 	Szoftver~és~Rendszer~Ellenőrzés $\cdot$
 	Rendszermodellezés $\cdot$
 	Rendszertervezés $\cdot$
-	Progamozás~Alapjai~1 (Németül) $\cdot$
+	Programozás~Alapjai~1 (németül) $\cdot$
 	Digitális~Technikák%
 }
 
