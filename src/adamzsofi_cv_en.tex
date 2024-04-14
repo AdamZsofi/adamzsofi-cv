@@ -2,7 +2,7 @@
 
 % moderncv themes
 \moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{green} % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         
 \nopagenumbers{}
 
@@ -21,8 +21,9 @@
 \extrainfo{
 	Budapest, Magyarország \faHome{}\\
 	\weblink{mailto:adamzsofi@edu.bme.hu}{adamzsofi@edu.bme.hu} \faEnvelope{}\\
+	\weblink{adamzsofi.github.io}{Webpage \faGlobe{}}\\
 	\weblink{http://github.com/AdamZsofi}{AdamZsofi \faGithub{}}\\
-	\weblink{https://www.linkedin.com/in/zs\%C3\%B3fia-\%C3\%A1d\%C3\%A1m-b534341a4/}{ \faLinkedin{}}\\
+	\weblink{https://www.linkedin.com/in/zs\%C3\%B3fia-\%C3\%A1d\%C3\%A1m-b534341a4/}{Linkedin \faLinkedin{}}\\
 	\weblink{https://orcid.org/0000-0002-6551-5860}{0000-0002-6551-5860 \faOrcid{}}
 }
 
@@ -36,13 +37,14 @@
 \vspace{-3em}
 
 \section{\faGraduationCap{} Education and Degrees}
+\cventry{2023--}{Software Engineering PhD}{Budapest University of Technology and Economics}{}{}{}
 %
-\cventry{2022--2023}{Software Engineering MSc}{Budapest University of Technology and Economics}{}{Szakdolgozat: Extending the Capabilities of the CEGAR Model Checking Algorithm}{}
+\cventry{2022--2023}{Software Engineering MSc}{Budapest University of Technology and Economics}{\weblink{https://ftsrg.mit.bme.hu/theta/publications/adamzsMsc2023.pdf}{Thesis: Extending the Capabilities of the CEGAR Model Checking Algorithm \faFile*[regular]}}{}{}
 %
 \cventry{2018--2022}{Software Engineering BSc}{Budapest University of Technology and Economics}{\weblink{https://ftsrg.mit.bme.hu/theta/publications/adamzsBsc2021.pdf}{Thesis: Efficient Techniques for Formal Verification of C Programs \faFile*[regular]}}{}{}
 
 \section{\faGlobe{} Experience}
-\cventry{2023 Nyár}%
+\cventry{2023 Summer}%
 {LMU}{Munich, Germany}{Research Stay}{}%
 {I spent two months working on validation of correctness proofs of hardware and software modelcheckers at the Software Systems Laboratory under the supervision of Prof. Dr. Dirk Beyer, Nian-Ze Lee and Po-Chun Chien. }
 %
@@ -55,18 +57,36 @@
 at thyssenkrupp}{}%
 {Developing rules for C verification with static analyzer based on the in-house coding guidelines.}
 %
-\cventry{2019--2023}%
-{Budapest University of Technology and Economics}{Budapest, HU}{Teaching Assistant}{}%
-{Delivering practical lectures, correcting and assembling exams, managing homework IT infrastructure in several courses.}
+%\cventry{2019--2023}%
+%{Budapest University of Technology and Economics}{Budapest, HU}{Teaching Assistant}{}%
+%{Delivering practical lectures, correcting and assembling exams, managing homework IT infrastructure in several courses.}
 %
 \section{\faLightbulb{} Skills and Interests}
-\cvitem{Research}{Software model checking, formal methods, CEGAR, tool  development, verification portfolios and algorithm selection}
-\cvitem{Development}{Java, C/C++, git, CI, scripting: Python, Bash}
+\cvitem{Research}{model checking, formal methods, CEGAR, tool  development, model transformations for verification, portfolios and algorithm selection}
+\cvitem{Development}{Java, Kotlin, C/C++, git, CI, Python, Bash}
 \cvitem{Languages}{Hungarian (native), English (advanced), German (intermediate)}
 
-\newpage
+%\newpage
 
 \section{\faFile*[regular]{} Selected Publications}
+\cventry{TACAS 2024}%
+{Btor2-Cert: A Certifying Hardware-Verification Framework Using Software Analyzers}%
+{\weblink{https://link.springer.com/chapter/10.1007/978-3-031-57256-2_7}{\faFile*[regular]}\newline{}
+\underline{Zs.~Ádám}, et al}
+{}{}{}
+%
+\cventry{TACAS (SV-COMP) 2024}%
+{ConcurrentWitness2Test: Test-Harnessing the Power of Concurrency (Competition Contribution)}%
+{\weblink{https://link.springer.com/chapter/10.1007/978-3-031-57256-2_16}{\faFile*[regular]}\newline{}
+L.~Bajczi, et al}
+{}{}{}
+%
+\cventry{TACAS (SV-COMP) 2024}%
+{EmergenTheta: Verification Beyond Abstraction Refinement (Competition Contribution)}%
+{\weblink{https://link.springer.com/chapter/10.1007/978-3-031-57256-2_23}{\faFile*[regular]}\newline{}
+L.~Bajczi, et al}
+{}{}{}
+%
 \cventry{NFM 2023}%
 {From Natural Language Requirements to the Verification of Programmable Logic Controllers}%
 {\weblink{https://link.springer.com/chapter/10.1007/978-3-031-33170-1_21}{\faFile*[regular]}\newline{}
@@ -75,7 +95,8 @@ at thyssenkrupp}{}%
 %
 \cventry{FormaliSE 2022}%
 {C for yourself: comparison of front-end techniques for formal verification}%
-{L.~Bajczi, \underline{Zs.~Ádám}, Hajdu, V.~Moln\'ar}
+{\weblink{https://dl.acm.org/doi/abs/10.1145/3524482.3527646?casa_token=U9v1qY6fUH0AAAAA:UjdcqXPYwKOTL5saCQQb4U69GlHSEDtf7RkObTe09CXVOA4Mxo6vHAap6CcUNxMAS9lDkyZnDdU}{\faFile*[regular]}\newline{}
+L.~Bajczi, \underline{Zs.~Ádám}, Hajdu, V.~Moln\'ar}
 {}{}{}
 %
 \cventry{TACAS SV-COMP 2022}%
@@ -84,17 +105,14 @@ at thyssenkrupp}{}%
 \underline{Zs.~Ádám}, et al}
 {}{}{}
 %
-\cventry{TACAS SV-COMP 2021}%
-{Gazer-Theta: LLVM-based Verifier Portfolio with BMC/CEGAR}%
-{\weblink{http://ftsrg.mit.bme.hu/paper-tacas2022-theta/paper.pdf}{\faFile*[regular]}\newline{}
-\underline{Zs.~Ádám}, L.~Bajczi, M.~Dobos-Kov\'acs, \'{A}. Hajdu, V.~Moln\'ar}
-{}{}{}
-%
+
 \cvitem{ORCID}{\weblink{https://orcid.org/0000-0003-2354-1750}{\faOrcid{}\small 0000-0003-2354-1750}}
-\cvitem{MTMT}{\weblink{https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10077295}{Publikációs Lista az MTMT-n, 10077295}}
+\cvitem{MTMT}{\weblink{https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10077295}{Publication list on MTMT, 10077295}}
 
 \section{\faTrophy{} Awards and Scholarships}
 
+\cvitem{2023}{"DKÖP" Doctoral Excellence Fellowship Programme Scholarship}
+\cvitem{2023}{"ÚNKP" Research Scholarship}
 \cvitem{2023}{\weblink{https://ms.sapientia.ro/otdk2023/hu/hirek/eredmenyek}First place at the National Scientific Students' Associations Conference (Formal Methods Category)}
 \cvitem{2022}{\weblink{https://tdk.bme.hu/VIK/beagy1/Absztrakcioalapu-trace-generalas-formalis}First place at the Scientific Students' Associations Conference (Embedded Systems Category)}
 \cvitem{2021}{\weblink{https://tdk.bme.hu/VIK/ViewPaper/Portfoliobased-runtime-improvements-for}Second place at the Scientific Students' Associations Conference (Software Category)}
@@ -103,9 +121,10 @@ at thyssenkrupp}{}%
 \cvitem{2021--2023}{Scholarship of the Faculty of BME-VIK}
 
 \section{\faFile*[regular]{} Open Source Contributions}
-\cvitem{\weblink{http://github.com/ftsrg/theta/}{Theta Conributor}}{Algorithmic improvement of CEGAR, researching portfolio strategies, development of a C software model checking frontend.}
+\cvitem{\weblink{http://github.com/ftsrg/theta/}{Theta Contributor}}{Algorithmic improvement of CEGAR, researching portfolio strategies, development of a C software model checking frontend.}
+\cvitem{\weblink{https://gitlab.com/sosy-lab/software/btor2-cert}{Btor2-Cert Contributor}}{Certified verification of hardware circuits utilizing software model checkers. Translation of software proofs back to the hardware circuit.}
 \cvitem{\weblink{https://gitlab.com/plcverif-oss}{PLCverif Contributor}}{Integrated the Formal Requirement Elicitation Tool (FRET) into the PLC verification tool PLCverif developed at CERN.}
-\cvitem{\weblink{http://github.com/ftsrg/gazer/}{Gazer}}{Added features and benchmarked Gazer, a BMC verification tool developed at ftsrg}
+\cvitem{\weblink{http://github.com/ftsrg/gazer/}{Gazer Contributor}}{Added features and benchmarked Gazer, a BMC verification tool developed at ftsrg}
 
 % TODO
 %\section{\faUniversity{} Academic Activities and Services}
@@ -148,6 +167,7 @@ at thyssenkrupp}{}%
 	Software~Techniques (in German and Hungarian) $\cdot$
 	Software~and~Systems~Verification~course $\cdot$
 	Systems~Modeling $\cdot$
+	Software Project Laboratory $\cdot$
 	Systems~Engineering $\cdot$
 	Basics~of~Programming~1 (in German) $\cdot$
 	Digital~Technology%
