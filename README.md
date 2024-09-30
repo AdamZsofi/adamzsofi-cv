@@ -1,4 +1,4 @@
-![.github/workflows/build-pdfs.yml](https://github.com/adamzsofi/adamzsofi-cv/workflows/.github/workflows/build-pdfs.yml/badge.svg)
+<!-- ![.github/workflows/build-pdfs.yml](https://github.com/adamzsofi/adamzsofi-cv/workflows/.github/workflows/build-pdfs.yml/badge.svg) -->
 
 [CV (EN short)](https://adamzsofi.github.io/adamzsofi-cv/adamzsofi_cv_en.pdf)
 
