@@ -3,6 +3,8 @@ on: [push]
 jobs:
   compile_paper_job:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     name: Compile
     steps:
     - name: Checkout
